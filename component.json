@@ -1,6 +1,6 @@
 {
-  "name": "ace-editor",
-  "repo": "binocarlos/ace-editor",
+  "name": "ace-component",
+  "repo": "binocarlos/ace-component",
   "description": "A digger component for editing code",
   "version": "0.0.1",
   "keywords": [],
