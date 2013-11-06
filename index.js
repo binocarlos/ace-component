@@ -4,7 +4,7 @@ $digger.directive('aceEditor', function($http, $safeApply, AsyncScriptLoader){
 
   var ace_editor_url = '<script src="//cdnjs.cloudflare.com/ajax/libs/ace/1.1.01/ace.js"></script>';
 
-	return {
+  return {
     restrict:'EA',
     template:template,
     replace:true,
@@ -46,10 +46,21 @@ $digger.directive('aceEditor', function($http, $safeApply, AsyncScriptLoader){
             editor.getSession().on('change', function(){
               var value = editor.getSession().getValue();
 
-              $scope.model[$scope.fieldname] = value;
-
-              console.dir($scope.model);
+              $safeApply($scope, function(){
+                $scope.model[$scope.fieldname] = value;  
+              })
+              
             });
+
+            $scope.$watch('model[fieldname]', function(val){
+
+              var existing = editor.getSession().getValue();
+
+              if(existing!=val){
+                editor.getSession().setValue(val);                
+              }
+              
+            })
           })
           
 
