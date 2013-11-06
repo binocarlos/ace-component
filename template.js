@@ -1,0 +1,1 @@
+module.exports = '<div style="width:100%;height:400px;">\n	<div style="width:100%;height:400px;" id="acecomponent">{{ model[fieldname] }}</div>\n</div>';

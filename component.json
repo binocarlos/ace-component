@@ -1,0 +1,24 @@
+{
+  "name": "ace-editor",
+  "repo": "binocarlos/ace-editor",
+  "description": "A digger component for editing code",
+  "version": "0.0.1",
+  "keywords": [],
+  "dependencies": {
+    
+  },
+  "development": {},
+  "license": "MIT",
+  "main": "index.js",
+  "images":[
+    
+  ],
+  "styles": [
+    
+  ],
+  "scripts": [
+    "index.js",
+    "template.js"
+  ],
+  "remotes": []
+}
