@@ -1,4 +1,4 @@
-markdown-editor
-===============
+ace-component
+=============
 
-A digger component that live converts markdown into HTML
+The ACE code editor wrapped up as a digger component
